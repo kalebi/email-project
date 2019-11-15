@@ -1,0 +1,37 @@
+<raiz>
+    <caixa_entrada>
+        <email_enviou>luiza@hotmail.com</email_enviou>
+        <emai_copia></emai_copia>
+        <email_recebeu>marcos@hotmail.com</email_recebeu>
+        <assunto>Resumo prova</assunto>
+        <texto>Segue anexo do resumo da prova de matemática</texto> 
+    </caixa_entrada>
+    <caixa_entrada>
+        <email_enviou>nathan@hotmail.com</email_enviou>
+        <emai_copia></emai_copia>
+        <email_recebeu>marcos@hotmail.com</email_recebeu>
+        <assunto>Trabalho de programação</assunto>
+        <texto>Estou mandando a minha parte do trabalho de prog</texto> 
+    </caixa_entrada>
+    <caixa_entrada>
+        <email_enviou>netshoes@hotmail.com</email_enviou>
+        <emai_copia></emai_copia>
+        <email_recebeu>marcos@hotmail.com</email_recebeu>
+        <assunto>BlackFriday netshoes</assunto>
+        <texto>Você não pode perder as nossas promoções da Black Friday!!</texto> 
+    </caixa_entrada>
+    <caixa_entrada>
+        <email_enviou>facebook@hotmail.com</email_enviou>
+        <emai_copia></emai_copia>
+        <email_recebeu>marcos@hotmail.com</email_recebeu>
+        <assunto>Marcação</assunto>
+        <texto>João André te marcou em uma publicacão</texto> 
+    </caixa_entrada>
+    <caixa_entrada>
+        <email_enviou>leticia@hotmail.com</email_enviou>
+        <emai_copia></emai_copia>
+        <email_recebeu>marcos@hotmail.com</email_recebeu>
+        <assunto>fotos</assunto>
+        <texto>To te mandando as fotos</texto> 
+    </caixa_entrada>
+</raiz>
