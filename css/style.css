@@ -1,5 +1,15 @@
 
-.container{
+.content-father{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+
+.content{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,13 +18,27 @@
     border: none;
     background-color: white;
 }
-.container table tr td a {
-    font-family: Arial, Helvetica, sans-serif;
-    
+
+.content img{
+    margin-top: 1rem;
 }
 
+.content table {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 3.4rem;
+}
 
-.buttonEntrar {
+.content table tr td p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.content table tr td input {
+    padding: 5px;
+    height: 30px;
+}
+
+.content-button {
     background-color: rgb(0, 110, 255);
     color: white;
     border: none;
@@ -22,15 +46,29 @@
     width: 70px;
 }
 
-.buttonEntrar:hover{
+.content-button:hover{
     cursor: pointer;
     background-color: rgb(0, 153, 255);
 }
 
-.container table tr td h3{
-    font-family: Arial, Helvetica, sans-serif
+/* Caixa de Entrada */
+
+.content-inbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
 }
 
-.container2{
-    width: 2000px;
+.content-inbox table {
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.content-inbox table tr td {
+    border: 1px solid black;
+    padding: 10px;
 }
