@@ -13,18 +13,19 @@ $(document).ready(function(){
                 if (resposta === null){
                     alert("Login Incorreto!");
                 }else{
-                    alert("Entrando...");
+                    window.location.href="inbox.html";
                 }
             },
 
             error: function(){
                 alert("Sem conexão com o servidor!");
-            }
-           
-             
+            }            
         });
     });
 
+    $("#bGoToRegister").click(function(){
+        window.location.href="register.html";
+    });
 
     $("form").submit(function(){
         return false;
