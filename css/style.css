@@ -83,11 +83,11 @@ body {
 .content-inbox table {
     height: 100%;
     width: 100%;
-    border: 1px solid black;
+    border: none;
 }
 
 .content-inbox table tr td {
-    border: 1px solid black;
+    border: none;
     padding: 10px;
 }
 
@@ -119,3 +119,39 @@ body {
 }
 
 
+.cEntrada{
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+.bMenus{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+
+}
+
+.bMenus:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.bNewMessage{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.bNewMessage:hover{
+    cursor: pointer;
+    color: cornflowerblue;
+}
+
+.tr1{
+    background-color: #4d79ff;
+}
+
+.tr2{
+    background-color: #f2f2f2;
+}

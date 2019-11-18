@@ -13,7 +13,7 @@ $(document).ready(function(){
                 if (resposta === null){
                     alert("Login Incorreto!");
                 }else{
-                    window.location.href="inbox.html";
+                    window.location.href="./html/inbox.html";
                 }
             },
 
