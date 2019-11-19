@@ -78,6 +78,7 @@ body {
     justify-content: center;
     height: 100%;
     width: 100%;
+    background-color: #F1F2F3;
 }
 
 .content-inbox table {
@@ -153,18 +154,43 @@ body {
 }
 
 .tr2{
-    background-color: #f2f2f2;
+    background-color: #B3DAFF;
 }
+
+/* Enviar email */
 
 .content-email { 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    position: relative;
-    bottom: 400px;
+    position: absolute;
+    bottom: 50%;
+    margin-bottom: -350px;
+    left: 235px;
 }
 
-.content-class-links{
-    display: flex;
-    margin-bottom: 1px;
+.content-email input{
+    margin-bottom: 0.2rem;
+    min-width: 800px;
+    min-height: 40px;
+    padding: 5px;
+}
+
+.content-email textarea { 
+    resize: none;
+    min-height: 500px;
+}
+
+.content-email button {
+    outline: none;
+    margin-top: 0.2rem;
+    border: none;
+    background-color: rgb(0, 110, 255);
+    color: white;
+    width: 100px;
+    height: 40px;
+}
+
+.content-email button:hover {
+    cursor: pointer;
+    background-color: rgb(0, 153, 255);
 }
