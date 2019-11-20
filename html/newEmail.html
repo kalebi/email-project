@@ -1,86 +1,79 @@
-<meta charset="utf-8">
 <html>
     <head>
-        <script type="text/javascript" src="../js/jquery.js"></script>
-        <script type="text/javascript" src="../js/newEmail.js"></script>
+        <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="../css/style.css"></link>
+        <script type="text/javascript" src="../js/jquery.js"></script>
+        <script type="text/javascript" src="../js/index.js"></script>
     </head>
     <body>
-        <form class="content-inbox" method="post" id="formId">
-            <table>
-                <thead>
-                    <tr class="tr1">   
-
-                        <td style="border-right: 0" width="13%">
-                            <img src="../img/menu.png" width="30px" height="30px">
-                        </td>
-
-                        <td style="border-left: 0">
-                            <input class="search-menu" type="text" placeholder="Pesquisar">
-                        </td>
-                        
-                        <td>
-                            <a class="button-logout" href="../index.html"> Logout </a>
-                        </td>
-                    </tr> 
-                </thead>
-                <tr>
-                    <td class="class-menu">
-                        <img src="../img/menu.png" width="20x" height="20px">
-                        <a class="bMenus">Favoritos</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="class-menu2">
-                        <img src="../img/menu.png" width="20x" height="20px">
-                        <a href="inbox.html" class="bMenus">Caixa de Entrada</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="class-menu">
-                        <img src="../img/menu.png" width="20x" height="20px">
-                        <a class="bMenus">Lixo Eletrônico</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="class-menu2">
-                        <img src="../img/menu.png" width="20x" height="20px">
-                        <a class="bMenus">Rascunho</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="class-menu">
-                        <img src="../img/menu.png" width="20x" height="20px">
-                        <a class="bMenus">Itens Enviados</a>
-                </tr>
-                <tr>
-                    <td class="class-menu2">
-                        <img src="../img/menu.png" width="20x" height="20px">
-                        <a class="bMenus">Itens Excluídos</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="class-menu">
-                        <img src="../img/menu.png" width="20x" height="20px">
-                        <a class="bMenus">Arquivo Morto</a>
-                    </td>
-                </tr>
-            </table>
+        <div class="content-email-sent">
+            <!-- Menu Topo -->
+            <label class="menu-topo" id="buttonMenu" for="check"> 
+                <img class="img-burger" src="../img/menu.png" width="30px" height="30px"> 
+            </label>
+            <input class="check-menu" type="checkbox" id="check">
             
-            <div class="content-email">
+            <!-- Menu Lateral -->
+            <div class="menu-lateral">
+                <div id="bNewMessage" class="menu-links">
+                    <span> Nova Mensagem </span>
+                </div>
+
+                <div class="menu-links">
+                    <span> Favoritos </span>
+                </div>
+
+                <div id="bInbox" class="menu-links">
+                    <span> Caixa de Entrada </span>
+                </div>
+
+                <div class="menu-links">
+                    <span> Lixo Eletrônico </span>
+                </div>
+
+                <div class="menu-links">
+                    <span> Rascunho </span>
+                </div>
                 
-                <input placeholder="Para:" id="new_para"/>
+                <div id="bEmailSent" class="menu-links">
+                    <span> Itens Enviados </span>
+                </div>
                 
-                <input placeholder="Cc:" id="new_cc"/>
+                <div class="menu-links">
+                    <span> Itens Excluídos </span>
+                </div>
                 
-                <input placeholder="Assunto:" id="new_assunto"/>
-                
-                <textarea placeholder="Texto:" id="new_texto"></textarea>
-                
-                <div>
-                    <button id="bButton">Enviar</button>
+                <div class="menu-links">
+                    <span> Arquivo Morto </span>
+                </div>
+
+                <div class="menu-links">
+                    <span> Sair </span>
+                </div> 
+            </div>
+
+            <!-- Conteúdo do site -->
+            <div class="body-email-sent">
+                <div class="body-title">
+                    <a> Emails enviados :) </a>
+                    <button id="bButton"> Enviar </button>
+                </div>
+
+                <!-- Lista de emails -->
+                <div class="list-emails">
+                    <div class="content-email">
+                        <input placeholder="Para:" id="new_para"/>
+                        
+                        <input placeholder="Cc:" id="new_cc"/>
+                        
+                        <input placeholder="Assunto:" id="new_assunto"/>
+                        
+                        <textarea placeholder="Texto:" id="new_texto"></textarea>
+                    </div>
                 </div>
             </div>
-        </form>
+        </div>
     </body>
 </html>
+            
+            
