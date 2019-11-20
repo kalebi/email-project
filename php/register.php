@@ -33,11 +33,6 @@
                 $url = "../xml/users/user_".($maior+1);
                 if(!file_exists($url)){
                     mkdir($url);
-                    mkdir($url."/pastas");
-                    $pastas = array("Favoritos","CaixaEntrada","LixoEletronico","Rascunho","ItensEnviados","ItensExcluidos","ArqMorto");
-                    foreach($pastas as $pasta){
-                        mkdir($url."/pastas/".$pasta);
-                    }
 
                     $xml = new DOMDocument("1.0");
                     

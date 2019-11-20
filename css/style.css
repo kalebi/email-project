@@ -130,8 +130,8 @@ body {
 
 .menu-links:hover { 
     cursor: pointer;
-    background-color: #A54A5A;
-    border: 1px solid #FF7477;
+    background-color: #99c2ff;
+    border: 1px solid #66a3ff;
     color: white;
 }
 
@@ -169,16 +169,16 @@ body {
 }
 
 .body-email-sent {
-    background-color: #FF7477;
+    background-color: #cce0ff;
     height: 100%;
     width: 100%;
     padding-left: 11%;
 }
 
 .body-title {
-    font-size: 20px;
+    font-size: 25px;
     padding: 1rem 0 1rem 0;
-    font-family: 'Caviar Dreams';
+    font-family: 'Arial';
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -194,7 +194,7 @@ body {
 }
 
 .body-title button:hover {
-    background-color: #A54A5A;
+    background-color: #99c2ff;
     color: white;
     cursor: pointer;
 }
@@ -202,7 +202,7 @@ body {
 .list-emails { 
     width: 88%;
     height: 90%;
-    background-color: #A54A5A;
+    background-color: #e6f0ff;
 }
 
 #check:checked ~ .menu-lateral{

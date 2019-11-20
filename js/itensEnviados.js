@@ -1,9 +1,9 @@
 $(document).ready(function () {
-    $("#bButton").click(function () {
+    $("#bListarE").click(function () {
         $.ajax({
             type: "POST",
             dataType: "json",
-            url: "../php/newEmail.php",
+            url: "../php/itensEnviados.php",
             data: {
                 newPara: $("#newPara").val(),
                 newCc: $("#newCc").val(),
@@ -24,4 +24,4 @@ $(document).ready(function () {
             window.location.href = "./login.html";
         });
     });
-});
+}); 

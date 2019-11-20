@@ -21,7 +21,43 @@
         <emailEnviou>facebook@hotmail.com</emailEnviou>
         <emailRecebeu>marcos@hotmail.com</emailRecebeu>
         <assunto>Marcação</assunto>
-        <texto>João André te marcou em uma publicacão</texto> 
+        <texto>João André te marcou em uma publicacão, entre no seu Facebook e verifique</texto> 
+    </caixaEntrada>
+    <caixaEntrada>
+        <emailEnviou>leticia@hotmail.com</emailEnviou>
+        <emailRecebeu>marcos@hotmail.com</emailRecebeu>
+        <assunto>fotos</assunto>
+        <texto>To te mandando as fotos de domingo, manda pra impressão por favor</texto> 
+    </caixaEntrada>
+    <caixaEntrada>
+        <emailEnviou>pucpr@hotmail.com</emailEnviou>
+        <emailRecebeu>marcos@hotmail.com</emailRecebeu>
+        <assunto>Boleto do mês de janeiro</assunto>
+        <texto>O boleto do mês de janeiro já está disponivel. Segue anexo</texto> 
+    </caixaEntrada>
+    <caixaEntrada>
+        <emailEnviou>twitter@hotmail.com</emailEnviou>
+        <emailRecebeu>marcos@hotmail.com</emailRecebeu>
+        <assunto>Marcação</assunto>
+        <texto>João Da Silva te marcou em uma publicação no Twitter, entre em seu Twitter para verificar</texto> 
+    </caixaEntrada>
+    <caixaEntrada>
+        <emailEnviou>lucas@hotmail.com</emailEnviou>
+        <emailRecebeu>marcos@hotmail.com</emailRecebeu>
+        <assunto>Trabalho de fisica</assunto>
+        <texto>Não estou conseguindo fazer o trabalho de fisica, se estiver livre esse final de semana consegue me dar uma ajuda?</texto> 
+    </caixaEntrada>
+    <caixaEntrada>
+        <emailEnviou>luiza@hotmail.com</emailEnviou>
+        <emailRecebeu>marcos@hotmail.com</emailRecebeu>
+        <assunto>Resumo prova</assunto>
+        <texto>Segue anexo do resumo da prova de matemática</texto> 
+    </caixaEntrada>
+    <caixaEntrada>
+        <emailEnviou>nathan@hotmail.com</emailEnviou>
+        <emailRecebeu>marcos@hotmail.com</emailRecebeu>
+        <assunto>Trabalho de programação</assunto>
+        <texto>Estou mandando a minha parte do trabalho de prog</texto> 
     </caixaEntrada>
     <caixaEntrada>
         <emailEnviou>leticia@hotmail.com</emailEnviou>
@@ -29,4 +65,41 @@
         <assunto>fotos</assunto>
         <texto>To te mandando as fotos</texto> 
     </caixaEntrada>
+    <caixaEntrada>
+        <emailEnviou>leticia@hotmail.com</emailEnviou>
+        <emailRecebeu>marcos@hotmail.com</emailRecebeu>
+        <assunto>fotos</assunto>
+        <texto>To te mandando as fotos</texto> 
+    </caixaEntrada>
+    <caixaEntrada>
+        <emailEnviou>leticia@hotmail.com</emailEnviou>
+        <emailRecebeu>marcos@hotmail.com</emailRecebeu>
+        <assunto>fotos</assunto>
+        <texto>To te mandando as fotos</texto> 
+    </caixaEntrada>
+    <caixaEntrada>
+        <emailEnviou>leticia@hotmail.com</emailEnviou>
+        <emailRecebeu>marcos@hotmail.com</emailRecebeu>
+        <assunto>fotos</assunto>
+        <texto>To te mandando as fotos</texto> 
+    </caixaEntrada>
+    <caixaEntrada>
+        <emailEnviou>leticia@hotmail.com</emailEnviou>
+        <emailRecebeu>marcos@hotmail.com</emailRecebeu>
+        <assunto>fotos</assunto>
+        <texto>To te mandando as fotos</texto> 
+    </caixaEntrada>
+    <caixaEntrada>
+        <emailEnviou>leticia@hotmail.com</emailEnviou>
+        <emailRecebeu>marcos@hotmail.com</emailRecebeu>
+        <assunto>fotos</assunto>
+        <texto>To te mandando as fotos</texto> 
+    </caixaEntrada>
+    <caixaEntrada>
+        <emailEnviou>leticia@hotmail.com</emailEnviou>
+        <emailRecebeu>marcos@hotmail.com</emailRecebeu>
+        <assunto>fotos</assunto>
+        <texto>To te mandando as fotos</texto> 
+    </caixaEntrada>
+
 </raiz>

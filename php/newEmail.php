@@ -1,49 +1,51 @@
 <?php
-    include("funcao.php");
     if($_POST){
         extract($_POST);
-        if(isset($new_para,$new_cc,$new_assunto,$new_texto)){
-            session_start();
-            extract($_SESSION);
-
-            $url = "../xml/users/user_".$id."/email";
-            if(!file_exists($url)){
-                mkdir($url);   
-            }
-            $archives = arrayEmails($url);
-            sort($archives);
-            $len = sizeof($archives);
-            if($len == 0){
-                $last = 1;
-            }else{
-                $max = 0;
-                foreach($archives as $archive){
-
-                    $array_arc = explode(".", $archive);
-                    $array_last = explode("_", $array_arc[0]);
-                    $last = $array_last[sizeof($array_last)-1];
-                    if($max < $last){
-                        $max = $last;
+        if(isset($newPara,$newCc,$newAssunto,$newTexto)){
+            $diretorio = dir("../xml/novoEmail");
+            $cont = 0;
+            while(($dir = $diretorio->read()) !== false){
+                $cont++;
+                if($dir != "." && $dir != ".."){
+                    $str_xml = file_get_contents("../xml/novoEmail/".$dir."/enviado.xml");
+                    $xml = simplexml_load_string($str_xml);
+            
+                    $array_id_atual = explode("_",$dir);
+                    $id_atual = $array_id_atual[1];
+                    if(!isset($maior)){
+                        $maior = $id_atual; 
+                    }else if($maior < $id_atual){
+                        $maior = $id_atual;
                     }
                 }
-                $last = $max+1;
             }
-            $xml = new DOMDOcument("1.0");
+            if($cont == 2){
+                $maior = 0;
+            }
+                $url = "../xml/novoEmail/enviado_".($maior+1);
+                if(!file_exists($url)){
+                    mkdir($url);
 
-            $data = $xml->createElement("data");
+                    $xml = new DOMDocument("1.0");
+                    
+                    $xml_enviado = $xml->createElement("enviado");
 
-            $email_para = $xml->createElement("para", $new_para);
-            $email_cc = $xml->createElement("cc", $new_cc);
-            $email_assunto = $xml->createElement("assunto", $new_assunto);
-            $email_texto = $xml->createElement("texto", $new_texto);
+                    $xml_para = $xml->createElement("para",$newPara);
+                    $xml_cc = $xml->createElement("cc",$newCc);
+                    $xml_assunto = $xml->createElement("assunto",$newAssunto);
+                    $xml_texto = $xml->createElement("texto",$newTexto);
+ 
+                    $xml_enviado->appendChild($xml_para);
+                    $xml_enviado->appendChild($xml_cc);
+                    $xml_enviado->appendChild($xml_assunto);
+                    $xml_enviado->appendChild($xml_texto);
 
-            $data->appendChild($email_para);
-            $data->appendChild($email_cc);
-            $data->appendChild($new_assunto);
-            $data->appendChild($new_texto);
-
-            $xml->appendChild($data);
-            $load_url = $url
+                    $xml->appendChild($xml_enviado);
+                    $xml->save($url."/enviado.xml");
+           
+                echo json_encode(true);               
         }
+      
     }
+}
 ?>

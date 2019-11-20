@@ -1,13 +1,18 @@
 <?php
 
     $xml_string = file_get_contents("../xml/caixaentrada.xml");
-
     $xml_objeto = simplexml_load_string($xml_string);
 
-    $retorno["emailEnviou"] = trim($xml_objeto->emailEnviou);
-    $retorno["emailRecebeu"] = trim($xml_objeto->emailRecebeu);
-    $retorno["assunto"] = trim($xml_objeto->assunto);
-    $retorno["texto"] = trim($xml_objeto->texto);
-    
-    echo json_encode($retorno);
+    $retorno = "";        
+foreach($xml_objeto->caixaEntrada as $dados){
+   $linha = "<p>";
+   $linha .= "De: ". $dados->emailEnviou;
+   $linha .= "   Para: ". $dados->emailRecebeu;
+   $linha .= "   Assunto: ". $dados->assunto;
+   $linha .= "   Mensagem: ". $dados->texto;
+   $linha .=  "</p>";
+   $retorno .= $linha;
+}
+echo json_encode($retorno);
+
 ?>  

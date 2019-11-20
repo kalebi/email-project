@@ -8,12 +8,12 @@ $(document).ready(function(){
 
                 var conteudo = "";
 
-                conteudo += "Enviou" + retorno.emailEnviou;
+                conteudo += retorno.emailEnviou;
                 conteudo += retorno.emailRecebeu;
                 conteudo += retorno.assunto;
                 conteudo += retorno.texto;
         
-                $("#dLista").html(conteudo);
+                $("#dLista").html(retorno);
             }
         });
     })
