@@ -12,42 +12,28 @@ $(document).ready(function () {
         //verifica se a senha é igual ao confirmar senha
         if (preenchido) {
             if ($.trim($("#createSenha").val() == $.trim($("#confirmSenha").val()))) {
+                var ajax_nome = $("#createNome").val();
+                var ajax_sobrenome = $("#createSobrenome").val();
+                var ajax_email = $("#createEmail").val();
+                var ajax_senha = $("#createSenha").val();
+                var ajax_confirmsenha = $("#confirmSenha").val();
+
                 $.ajax({
+
                     type: "POST",
-                    dataType: "json",
                     url: "../php/register.php",
                     data: {
-                        "createNome": $("#createNome").val(),
-                        "createSobrenome": $("#createSobrenome").val(),
-                        "createEmail": $("#createEmail").val(),
-                        "createSenha": $("#createSenha").val(),
-                        "confirmSenha": $("#confirmSenha").val()
+                        nome = ajax_nome,
+                        sobrenome = ajax_sobrenome,
+                        email = ajax_email,
+                        senha = ajax_senha,
+                        confimar = ajax_confirmsenha
                     },
-                    success: function (retorno) {
-                        switch (retorno) {
-                            case 1:
-                                alert("Usuário cadastrado com sucesso!");
-                                window.location.href = "login.html";
-                                break;
-
-                            case 2:
-                                alert("Esse usuário já está cadastrado!");
-                                break;
-
-                            case 3:
-                                alert("Sem permissão");
-                                break;
-                        }
-                    },
-
-                    error: function () {
-                        alert("Sem conexão ao servidor!");
+                    success: function(retorno){
+                        alert(retorno);
                     }
                 });
-            } else {
-                alert("Por favor preencha todos os campos");
             }
-            return false;
         }
     });
 
