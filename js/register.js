@@ -1,16 +1,5 @@
-$(document).ready(function () {
-    $("input").attr("required", true);
-
-    $("formId#formId").submit(function () {
-        preenchido = true;
-        $("input").each(function () { //percorrer todos os inputs para verificar se todos estão preenchidos 
-            if ($(input).val() == "") {
-                preenchido = false;
-            }
-        });
-
-        //verifica se a senha é igual ao confirmar senha
-        if (preenchido) {
+$(document).ready(function(){
+    $("#bEntrar").click()
             if ($.trim($("#createSenha").val() == $.trim($("#confirmSenha").val()))) {
                 var ajax_nome = $("#createNome").val();
                 var ajax_sobrenome = $("#createSobrenome").val();
