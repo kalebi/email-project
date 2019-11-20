@@ -1,108 +1,69 @@
-<meta charset="utf-8">
-
 <html>
     <head>
+        <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="../css/style.css"></link>
+        <script type="text/javascript" src="../js/jquery.js"></script>
+        <script type="text/javascript" src="../js/index.js"></script>
     </head>
-
     <body>
-        <div class="content-inbox">
-            <table>
-                <thead>
-                    <tr class="tr1">   
+        <div class="content-email-sent">
+            <!-- Menu Topo -->
+            <label class="menu-topo" id="buttonMenu" for="check"> 
+                <img class="img-burger" src="../img/menu.png" width="30px" height="30px"> 
+            </label>
+            <input class="check-menu" type="checkbox" id="check">
+            
+            <!-- Menu Lateral -->
+            <div class="menu-lateral">
+                <div id="bNewMessage" class="menu-links">
+                    <span> Nova Mensagem </span>
+                </div>
 
-                        <td style="border-right: 0" width="13%">
-                            <img src="../img/menu.png" width="30px" height="30px">
-                        </td>
+                <div class="menu-links">
+                    <span> Favoritos </span>
+                </div>
 
-                        <td style="border-left: 0">
-                            <input class="search-menu" type="text" placeholder="Pesquisar">
-                        </td>
-                        
-                        <td>
-                            <a class="button-logout" href="../index.html"> Logout </a>
-                        </td>
-                    </tr> 
-                </thead>
-                <tr class="tr2">
-                    <td>
-                        <a href="newEmail.html" class="bNewMessage">+ Nova Mensagem</a>
-                    </td>
+                <div id="bInbox" class="menu-links">
+                    <span> Caixa de Entrada </span>
+                </div>
 
-                    <td colspan="2">
-                        <a class="cEntrada">Caixa de Entrada</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="class-menu">
-                        <img src="../img/menu.png" width="20x" height="20px">
-                        <a class="bMenus">Favoritos</a>
-                    </td>
+                <div class="menu-links">
+                    <span> Lixo Eletrônico </span>
+                </div>
 
-                    <td>
-                        <img src="../img/perfil.jpg" width="20px" height="20px">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="class-menu2">
-                        <img src="../img/menu.png" width="20x" height="20px">
-                        <a class="bMenus">Caixa de Entrada</a>
-                    </td>
+                <div class="menu-links">
+                    <span> Rascunho </span>
+                </div>
+                
+                <div id="bEmailSent" class="menu-links">
+                    <span> Itens Enviados </span>
+                </div>
+                
+                <div class="menu-links">
+                    <span> Itens Excluídos </span>
+                </div>
+                
+                <div class="menu-links">
+                    <span> Arquivo Morto </span>
+                </div>
 
-                    <td>
-                        <img src="../img/perfil.jpg" width="20px" height="20px">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="class-menu">
-                        <img src="../img/menu.png" width="20x" height="20px">
-                        <a class="bMenus">Lixo Eletrônico</a>
-                    </td>
+                <div class="menu-links">
+                    <span> Sair </span>
+                </div> 
+            </div>
 
-                    <td>
-                        <img src="../img/perfil.jpg" width="20px" height="20px">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="class-menu2">
-                        <img src="../img/menu.png" width="20x" height="20px">
-                        <a class="bMenus">Rascunho</a>
-                    </td>
+            <!-- Conteúdo do site -->
+            <div class="body-email-sent">
+                <div class="body-title">
+                    <a> Emails enviados :) </a>
+                    <button> Limpar </button>
+                </div>
 
-                    <td>
-                        <img src="../img/perfil.jpg" width="20px" height="20px">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="class-menu">
-                        <img src="../img/menu.png" width="20x" height="20px">
-                        <a href="emailSent.html" class="bMenus">Itens Enviados</a>
+                <!-- Lista de emails -->
+                <div class="list-emails">
 
-                    <td>
-                        <img src="../img/perfil.jpg" width="20px" height="20px">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="class-menu2">
-                        <img src="../img/menu.png" width="20x" height="20px">
-                        <a class="bMenus">Itens Excluídos</a>
-                    </td>
-
-                    <td>
-                        <img src="../img/perfil.jpg" width="20px" height="20px">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="class-menu">
-                        <img src="../img/menu.png" width="20x" height="20px">
-                        <a class="bMenus">Arquivo Morto</a>
-                    </td>
-
-                    <td>
-                        <img src="../img/perfil.jpg" width="20px" height="20px">
-                    </td>
-                </tr>
-            </table>
+                </div>
+            </div>
         </div>
     </body>
 </html>

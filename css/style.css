@@ -184,11 +184,8 @@ body {
 .content-email { 
     display: flex;
     flex-direction: column;
-    position: absolute;
-    bottom: 50%;
-    margin-bottom: -340px;
-    left: 215px;
-    overflow: hidden;
+    width: 100%;
+    height: 90%;
 }
 
 .content-email input{
