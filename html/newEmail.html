@@ -8,8 +8,15 @@
     <body>
         <div class="content-email-sent">
             <!-- Menu Topo -->
-            <label class="menu-topo" id="buttonMenu" for="check"> 
-                <img class="img-burger" src="../img/menu.png" width="30px" height="30px"> 
+            <label for="check" class="menu-topo" id="buttonMenu"> 
+                <div class="organization-menu">
+                    <img class="img-burger" src="../img/menu.png" width="30px" height="30px"> 
+                    <input class="search-menu" placeholder="Pesquisar">
+                </div>
+
+                <div style="position: relative; right: 50px;">
+                    <a href="../index.html" style="text-decoration: none;"> Sair </a>
+                </div>
             </label>
             <input class="check-menu" type="checkbox" id="check">
             
@@ -55,7 +62,7 @@
             <!-- Conteúdo do site -->
             <div class="body-email-sent">
                 <div class="body-title">
-                    <a> Emails enviados :) </a>
+                    <a> Novo E-Mail :) </a>
                     <button id="bButton"> Enviar </button>
                 </div>
 
