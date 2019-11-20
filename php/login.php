@@ -1,20 +1,41 @@
 <?php
-    $xml_string = file_get_contents("../xml/usuarios.xml");
-    $xml = simplexml_load_string($xml_string);
-
-    $login = $xml->login;
-    foreach($login as $usuario){    
-        //echo $usuario->usuario;
-        //echo $usuario->senha;
-        if ($usuario->usuario == $_POST['login'] && $usuario->senha == $_POST['senha']){
-            $resposta = array (
-                "usuario"=>$_POST["login"]
-            );
-            break;
+    if($_POST){
+        extract($_POST);
+        if(isset($email,$senha)){
+            $diretorio = dir("../xml/users/");
+            $cont = 0;
+            $exist = false;
+            while(($dir = $diretorio->read()) !== false){
+                $cont++;
+                $url = "../xml/users/".$dir;
+                if(file_exists($url."/dados.xml")){
+                    $str_xml = file_get_contents($url."/dados.xml");
+                    $xml = simplexml_load_string($str_xml);
+                    if($xml->email == $email && $xml->senha == $senha){
+                        $exist = true;
+                        $array_id = explode("_",$dir);
+                        $id = $array_id[1];
+                    }
+                }
+            }
+            if($cont == 2){
+                echo json_encode(-2);
+            }else{
+                if($exist){
+                    session_start();
+                    $_SESSION["id"] = $id;
+                    $_SESSION["email"] = $email;
+                    $_SESSION["senha"] = $senha;
+                    echo json_encode(1);
+                }else{
+                    echo json_encode(-3);
+                }
+            }
         }else{
-            $resposta = null;
-            
+            echo json_encode(-1);
         }
+    }else{
+        Header("Location: ../html/login.html");
     }
-    echo json_encode($resposta);
+    exit();
 ?>
